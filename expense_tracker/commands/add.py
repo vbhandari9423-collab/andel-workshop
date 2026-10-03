@@ -44,7 +44,6 @@ def handle(args, store) -> int:
     expenses.append(expense)
     store.save(expenses)
     print(
-        f"Added #{expense.id}: {format_amount(amount_cents)} "
-        f"{expense.category} on {expense.date}"
+        f"Added #{expense.id}: {format_amount(amount_cents)} {expense.category} on {expense.date}"
     )
     return 0
